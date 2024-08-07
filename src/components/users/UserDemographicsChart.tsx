@@ -43,7 +43,7 @@ const UserDemographicsChart = () => {
                 `${name} ${(percent * 100).toFixed(0)}%`
               }
             >
-              {userDemographicsData.map((entry, index) => (
+              {userDemographicsData.map((_, index) => (
                 <Cell
                   key={`cell-${index}`}
                   fill={COLORS[index % COLORS.length]}

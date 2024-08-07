@@ -7,7 +7,7 @@ const Security = () => {
   const [twoFactor, setTwoFactor] = useState(false);
 
   return (
-    <SettingSection icon={Lock} title={"Security"}>
+    <SettingSection icon={() => <Lock />} title={"Security"}>
       <ToggleSwitch
         label={"Two-Factor Authentication"}
         isOn={twoFactor}

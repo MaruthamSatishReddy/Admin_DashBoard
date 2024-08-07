@@ -30,25 +30,25 @@ const UsersPage = () => {
         >
           <StatCard
             name="Total Users"
-            icon={UsersIcon}
+            icon={() => <UsersIcon />}
             value={userStats.totalUsers.toLocaleString()}
             color="#6366F1"
           />
           <StatCard
             name="New Users Today"
-            icon={UserPlus}
+            icon={() => <UserPlus />}
             value={userStats.newUsersToday}
             color="#10B981"
           />
           <StatCard
             name="Active Users"
-            icon={UserCheck}
+            icon={() => <UserCheck />}
             value={userStats.activeUsers.toLocaleString()}
             color="#F59E0B"
           />
           <StatCard
             name="Churn Rate"
-            icon={UserX}
+            icon={() => <UserX />}
             value={userStats.churnRate}
             color="#EF4444"
           />

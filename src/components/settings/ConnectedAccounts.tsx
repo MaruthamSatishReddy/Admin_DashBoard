@@ -24,7 +24,7 @@ const ConnectedAccounts = () => {
     },
   ]);
   return (
-    <SettingSection icon={HelpCircle} title={"Connected Accounts"}>
+    <SettingSection icon={() => <HelpCircle />} title={"Connected Accounts"}>
       {connectedAccounts.map((account) => (
         <div
           key={account.id}

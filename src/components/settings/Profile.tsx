@@ -3,7 +3,7 @@ import SettingSection from "../settings/SettingSection";
 
 const Profile = () => {
   return (
-    <SettingSection icon={User} title={"Profile"}>
+    <SettingSection icon={() => <User />} title={"Profile"}>
       <div className="flex flex-col sm:flex-row items-center mb-6">
         <img
           src="https://randomuser.me/api/portraits/men/3.jpg"

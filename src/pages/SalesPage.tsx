@@ -29,25 +29,25 @@ const SalesPage = () => {
         >
           <StatCard
             name="Total Revenue"
-            icon={DollarSign}
+            icon={() => <DollarSign />}
             value={salesStats.totalRevenue}
             color="#6366F1"
           />
           <StatCard
             name="Avg. Order Value"
-            icon={ShoppingCart}
+            icon={() => <ShoppingCart />}
             value={salesStats.averageOrderValue}
             color="#10B981"
           />
           <StatCard
             name="Conversion Rate"
-            icon={TrendingUp}
+            icon={() => <TrendingUp />}
             value={salesStats.conversionRate}
             color="#F59E0B"
           />
           <StatCard
             name="Sales Growth"
-            icon={CreditCard}
+            icon={() => <CreditCard />}
             value={salesStats.salesGrowth}
             color="#EF4444"
           />

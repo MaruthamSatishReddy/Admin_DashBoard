@@ -1,4 +1,10 @@
-const ToggleSwitch = ({ label, isOn, onToggle }) => {
+interface ToggleSwitchProps {
+  label: string;
+  isOn: boolean;
+  onToggle: () => void;
+}
+
+const ToggleSwitch = ({ label, isOn, onToggle }: ToggleSwitchProps) => {
   return (
     <div className="flex items-center justify-between py-3">
       <span className="text-gray-300">{label}</span>

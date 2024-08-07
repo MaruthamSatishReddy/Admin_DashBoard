@@ -1,6 +1,16 @@
+import { ReactNode } from "react";
 import { motion } from "framer-motion";
-
-const SettingSection = ({ icon: Icon, title, children }) => {
+import { IconType } from "react-icons/lib";
+interface SettingSectionProps {
+  icon: IconType;
+  title: string;
+  children: ReactNode;
+}
+const SettingSection = ({
+  icon: Icon,
+  title,
+  children,
+}: SettingSectionProps) => {
   return (
     <motion.div
       className="bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-lg shadow-lg rounded-xl p-6 border border-gray-700 mb-8"

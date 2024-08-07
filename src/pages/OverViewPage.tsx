@@ -19,20 +19,25 @@ const OverViewPage = () => {
         >
           <StatCard
             name="Total Sales"
-            icon={Zap}
+            icon={() => <Zap />}
             value="34567"
             color="#6366f1"
           />
-          <StatCard name="New User" icon={Users} value="1234" color="#6366f1" />
+          <StatCard
+            name="New User"
+            icon={() => <Users />}
+            value="1234"
+            color="#6366f1"
+          />
           <StatCard
             name="Total Products"
-            icon={ShoppingBag}
+            icon={() => <ShoppingBag />}
             value="123"
             color="#6366f1"
           />
           <StatCard
             name="Conversion Rate"
-            icon={Zap}
+            icon={() => <Zap />}
             value="12.5%"
             color="#10B981"
           />
